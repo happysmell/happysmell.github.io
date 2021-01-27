@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" style="width:100%; height:100%;">
+
+<head>
+    <meta charset="utf-8">
+    <title>Khushboo Gupta - Portfolio</title>
+</head>
+
+<body style="width:100%; height:100%; margin:0;">
+    <!--<embed src="https://happysmell.github.io/docs/khushboo_gupta_portfolio.pdf" width="100%" height="100%" />-->
+    <!-- insert just before the closing body tag </body> -->
+    <script src='web/pdfobject.min.js'></script>
+    <script>
+        var options = {
+            pdfOpenParams: {
+                view: 'Fit',
+                pagemode: 'thumbs',
+                toolbar: '1',
+                statusbar: '1'
+            },
+			forcePDFJS: true,
+			PDFJS_URL: 'web/viewer.html'
+        };
+
+        PDFObject.embed("https://happysmell.github.io/docs/khushboo_gupta_portfolio.pdf", false, options);
+    </script>
+</body>
+
+</html>
