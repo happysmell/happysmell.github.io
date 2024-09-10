@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" style="width:100%; height:100%;">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="google-site-verification" content="1w-_ByeF8AODhn2dxVTjz1q8-thpSmYQa0kQUGOBZTg" />
+    <title>Khushboo Gupta - Resume</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X9ZHN5TC4Z"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-X9ZHN5TC4Z');
+    </script>
+</head>
+
+<body style="width:100%; height:100%; margin:0;">
+    <!-- insert just before the closing body tag </body> -->
+    <script src='web/pdfobject.min.js'></script>
+    <script>
+        var options = {
+            pdfOpenParams: {
+                view: 'Fit',
+                pagemode: 'thumbs',
+                toolbar: '1',
+                statusbar: '1'
+            },
+            forcePDFJS: true,
+            PDFJS_URL: 'web/viewer.html'
+        };
+
+        PDFObject.embed("https://happysmell.github.io/docs/khushboo_gupta_resume.pdf", false, options);
+    </script>
+</body>
+
+</html>
